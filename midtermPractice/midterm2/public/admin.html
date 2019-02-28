@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Admin Console</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <script src="javascripts/app.js"></script>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+
+<body ng-app="shop" ng-controller="MainCtrl" class="admin_background">
+    <div style="margin-left: 5em;">
+        <h1> You Own A Store! </h1>
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4 class="right">
+                        Item Name:
+                    </h4>
+                    <h4 class="right">
+                        Photo Url:
+                    </h4>
+                    <h4 class="right">
+                        Price:
+                    </h4>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <form name="add_item_form" ng-submit="addItem()">
+                        <h4 class="left"></h4>
+                        <input type="text" ng-model="name" required /> <br><br class="tinybr">
+
+                        <input type="text" ng-model="url" required /> <br><br class="tinybr">
+
+                        <input type="number" ng-model="price" required /> <br><br class="tinybr">
+                        <button ng-disabled="add_item_form.$invalid" type="submit">Add Item</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <h1>Current Orders & Items:</h1>
+        <div ng-repeat="item in items | orderBy:['Name']">
+            <h3 class="text_bold visable">
+                <span class="glyphicon glyphicon-remove" ng-click="delete(item)"></span> {{item.Name}} - ${{item.Price}}</h3>
+            <img class='avatar' ng-src="{{item.Picture}}" />
+            <h3 class="text_bold visable">Orders: {{item.orders}}</h3>
+            </h3>
+        </div>
+</body>
+
+</html>

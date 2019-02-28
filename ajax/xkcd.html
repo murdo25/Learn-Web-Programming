@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>MTG Example</title>
+
+    <style>
+    </style>
+
+
+</head>
+
+
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+
+<script>
+    //http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439390&type=card
+    //multiverseid
+
+    function getImage(multiverseid) {
+
+    }
+
+
+    $(document).ready(function() {
+        console.log("test123")
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        $("#submitButton").click(function(e) {
+            e.preventDefault();
+
+            let everything = "<ul>"
+
+            var myurl = "http://dynamic.xkcd.com/api-0/jsonp/comic/randomNumber";
+
+            myurl = myurl.replace("randomNumber", getRandomInt(1500))
+            console.log(myurl);
+            $.ajax({
+                url: myurl,
+                crossDomain: true,
+                dataType: "jsonp",
+                success: function(parsed_json) {
+                    console.log(parsed_json);
+                    let testCard = parsed_json
+
+                    everything += "<img src=\"" + testCard['img'] + "\">"
+
+                    $("#img").html(everything);
+                    $("#text").html(JSON.stringify(parsed_json["alt"]));
+                }
+            });
+        });
+    });
+</script>
+
+<body>
+    <form>
+        <!--Enter A Card Name:-->
+        Find a Comic:<br>
+        <!--<input id="inputField" type="text" value="test">-->
+        <input id="submitButton" type="submit" value="Random Comic">
+    </form>
+    <br><br>
+    <div id="img"></div>
+    <div id="text"></div>
+
+</body>
+
+
+</html>

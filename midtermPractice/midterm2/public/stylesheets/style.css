@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.avatar {
+  /*width: 100px;*/
+  height: 100px;
+}
+
+.right {
+  text-align: right;
+}
+
+.tinybr {
+  display: block;
+  content: "";
+  margin-top: 5
+}
+
+.store_wallpaper {
+  background-image: url("https://66.media.tumblr.com/04698fcd4e7753c8d781f5e9cd7621ee/tumblr_nj8ah6736n1tec7mgo2_1280.jpg");
+}
+
+.admin_background {
+  background-color: #B291B5;
+}
+
+.text_bold {
+  font-weight: bold;
+  display: inline
+}
+
+.visable {
+  background-color: #D3D1D3;
+
+  border-radius: 15px;
+
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+
+}
+
+img {
+  border-radius: 20%;
+}

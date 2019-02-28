@@ -1,0 +1,111 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2  19692  2532 ?        Ss   Sep08   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Sep08   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I    Sep08   0:00 [kworker/0:0]
+root         4  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   Sep08   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Sep08   0:16 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    Sep08   0:50 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    Sep08   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Sep08   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    Sep08   0:10 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    Sep08   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    Sep08   0:00 [kdevtmpfs]
+root        14  0.0  0.0      0     0 ?        I<   Sep08   0:00 [netns]
+root        20  0.0  0.0      0     0 ?        S    Sep08   0:00 [xenbus]
+root        21  0.0  0.0      0     0 ?        S    Sep08   0:00 [xenwatch]
+root       159  0.0  0.0      0     0 ?        S    Sep08   0:01 [khungtaskd]
+root       160  0.0  0.0      0     0 ?        S    Sep08   0:00 [oom_reaper]
+root       161  0.0  0.0      0     0 ?        I<   Sep08   0:00 [writeback]
+root       163  0.0  0.0      0     0 ?        S    Sep08   0:00 [kcompactd0]
+root       164  0.0  0.0      0     0 ?        SN   Sep08   0:00 [ksmd]
+root       165  0.0  0.0      0     0 ?        SN   Sep08   0:00 [khugepaged]
+root       166  0.0  0.0      0     0 ?        I<   Sep08   0:00 [crypto]
+root       167  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kintegrityd]
+root       169  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kblockd]
+root       520  0.0  0.0      0     0 ?        I<   Sep08   0:00 [md]
+root       523  0.0  0.0      0     0 ?        I<   Sep08   0:00 [edac-poller]
+root       652  0.0  0.0      0     0 ?        S    Sep08   0:04 [kauditd]
+root       658  0.0  0.0      0     0 ?        S    Sep08   0:02 [kswapd0]
+root       755  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kthrotld]
+root       802  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kstrp]
+ec2-user  1121  0.0  0.5 155424  5796 pts/4    S    Oct17  31:50 vim 2.js
+ec2-user  1198  0.0  0.3 115640  3552 pts/4    S+   Oct17   0:00 /bin/bash
+root      1434  0.0  0.0      0     0 ?        I<   Sep08   0:00 [ata_sff]
+root      1440  0.0  0.0      0     0 ?        S    Sep08   0:00 [scsi_eh_0]
+root      1459  0.0  0.0      0     0 ?        I<   Sep08   0:00 [scsi_tmf_0]
+root      1462  0.0  0.0      0     0 ?        S    Sep08   0:00 [scsi_eh_1]
+root      1463  0.0  0.0      0     0 ?        I<   Sep08   0:00 [scsi_tmf_1]
+root      1503  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kworker/u31:0]
+root      1524  0.0  0.0      0     0 ?        S    Sep08   0:29 [jbd2/xvda1-8]
+root      1525  0.0  0.0      0     0 ?        I<   Sep08   0:00 [ext4-rsv-conver]
+root      1572  0.0  0.2  11512  2588 ?        Ss   Sep08   0:00 /sbin/udevd -d
+root      1807  0.0  0.0      0     0 ?        I    Sep08   3:31 [kworker/0:2]
+root      1844  0.0  0.0      0     0 ?        I<   Sep08   0:00 [kworker/0:1H]
+root      1891  0.0  0.0 109140   232 ?        Ss   Sep08   0:00 lvmetad
+root      1900  0.0  0.0  27196   196 ?        Ss   Sep08   0:00 lvmpolld
+root      1952  0.0  0.0      0     0 ?        I<   Sep08   0:00 [ipv6_addrconf]
+root      2112  0.0  0.1   9412  1968 ?        Ss   Sep08   0:01 /sbin/dhclient -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0
+root      2225  0.0  0.1   9412  1708 ?        Ss   Sep08   0:05 /sbin/dhclient -6 -nw -lf /var/lib/dhclient/dhclient6-eth0.leases -pf /var/run/dhclient6-eth0.pid -H localhost eth0
+root      2267  0.0  0.4 275044  4484 ?        Ssl  Sep08   0:36 /usr/bin/amazon-ssm-agent
+root      2277  0.0  0.2  53004  2352 ?        S<sl Sep08   0:19 auditd
+root      2299  0.0  0.5 247820  5992 ?        Sl   Sep08   0:12 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5
+root      2322  0.0  0.0   6520   100 ?        Ss   Sep08   1:25 rngd --no-tpm=1 --quiet
+rpc       2342  0.0  0.2  35364  2132 ?        Ss   Sep08   0:04 rpcbind
+rpcuser   2363  0.0  0.3  39932  3128 ?        Ss   Sep08   0:00 rpc.statd
+dbus      2394  0.0  0.0  21844   228 ?        Ss   Sep08   0:00 dbus-daemon --system
+root      2429  0.0  0.1   4396  1540 ?        Ss   Sep08   0:00 /usr/sbin/acpid
+root      2583  0.0  0.2  80536  2968 ?        Ss   Sep08   0:01 /usr/sbin/sshd
+ntp       2594  0.0  0.4 116516  4624 ?        Ssl  Sep08   3:05 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      2615  0.0  0.3  89584  3740 ?        Ss   Sep08   1:28 sendmail: accepting connections
+smmsp     2624  0.0  0.3  81040  3484 ?        Ss   Sep08   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      2636  0.0  0.2 121648  2432 ?        Ss   Sep08   0:27 crond
+root      2650  0.0  0.0  19188   168 ?        Ss   Sep08   0:00 /usr/sbin/atd
+root      2681  0.0  2.8 361668 28796 ?        Sl   Sep08  61:02 /usr/bin/dockerd --default-ulimit nofile=1024:4096
+root      2687  0.0  0.5 277176  5724 ?        Ssl  Sep08  71:43 docker-containerd --config /var/run/docker/containerd/containerd.toml
+root      2922  0.0  0.1   6508  1692 ttyS0    Ss+  Sep08   0:00 /sbin/agetty ttyS0 9600 vt100-nav
+root      2925  0.0  0.1   4360  1440 tty1     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty1
+root      2929  0.0  0.1   4360  1644 tty2     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty2
+root      2931  0.0  0.1   4360  1656 tty3     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty3
+root      2933  0.0  0.1   4360  1452 tty4     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty4
+root      2935  0.0  0.1   4360  1424 tty5     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty5
+root      2937  0.0  0.1   4360  1452 tty6     Ss+  Sep08   0:00 /sbin/mingetty /dev/tty6
+root      2941  0.0  0.1  10924  1580 ?        S    Sep08   0:00 /sbin/udevd -d
+root      2942  0.0  0.1  10924  1580 ?        S    Sep08   0:00 /sbin/udevd -d
+ec2-user  3180  0.0  0.5 117768  5336 ?        Ss   Sep08   0:20 /home/ec2-user/.c9/bin/tmux -u2 -L cloud92.2 new -s cloud9_terminal_752 export ISOUTPUTPANE=0;bash -l ; set -q -g status off ; set -q destroy-unattached off ; set -q mouse-select-pane on ; set -q set-titles on ; set -q quiet on ; set -q -g prefix C-b ; set -q -g default-terminal xterm-256color ; setw -q -g xterm-keys on
+root      4083  0.0  0.0      0     0 ?        I    Nov11   0:00 [kworker/u30:2]
+apache    4292  0.0  1.4 459776 14880 ?        Sl   Nov11   0:09 /usr/sbin/httpd
+root      6653  0.0  2.3 418632 23252 ?        Ss   Oct23   0:32 /usr/sbin/httpd
+root     10360  0.0  0.7 120004  7260 ?        Ss   03:43   0:00 sshd: ec2-user [priv]
+ec2-user 10362  0.0  0.5 120912  5340 ?        S    03:43   0:00 sshd: ec2-user@notty
+ec2-user 10363  0.1  5.0 1266196 50488 ?       Ssl  03:43   0:10 vfs-worker {"pingInterval":5000,"nodePath":"/home/ec2-user/.c9/node_modules","tmuxBin":"/home/ec2-user/.c9/bin/tmux","root":"/","debug":false,"connectionTimeout":60000,"metapath":"/.c9/metadata","envmetapath":"/.c9/metadata/environment","projectDir":"/home/ec2-user/environment","sshConnectTimeout":30000,"portForwards":[],"extendApi":{"collab":{"file":"c9.ide.collab/server/collab-server.js","user":{"userId":"504624606337","name":"root"},"project":{"workspaceId":"7b28292a3e8748fe84d40df97d2c3ee7","name":"learning-the-web-7456","type":"ec2"},"environment":{"id":"7b28292a3e8748fe84d40df97d2c3ee7","name":"learning-the-web-7456","type":"ec2"},"readonly":false,"nodePath":"/home/ec2-user/.c9/node_modules"},"ping":{"file":"c9.vfs.client/ping-service.js"},"store":{"file":"c9.vfs.client/store-service.js"}},"defaultEnv":{"HGUSER":"root","EDITOR":"","PORT":"8080","C9_PORT":"8080","IP":"127.0.0.1","C9_HOSTNAME":"18.234.104.123","C9_USER":"root","C9_PROJECT":"learning-the-web-7456","C9_PID":"7b28292a3e8748fe84d40df97d2c3ee7"}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+root     10695  0.0  0.7 120004  7080 ?        Ss   03:43   0:00 sshd: ec2-user [priv]
+ec2-user 10699  0.0  0.3 120004  4012 ?        S    03:43   0:00 sshd: ec2-user@notty
+ec2-user 10702  0.0  2.8 780336 28804 ?        Ssl  03:43   0:00 vfs-worker {"pingInterval":5000,"nodePath":"/home/ec2-user/.c9/node_modules","tmuxBin":"/home/ec2-user/.c9/bin/tmux","root":"/","debug":false,"connectionTimeout":60000,"metapath":"/.c9/metadata","envmetapath":"/.c9/metadata/environment","projectDir":"/home/ec2-user/environment","sshConnectTimeout":30000,"portForwards":[{"from":8080,"to":34455},{"from":8081,"to":34456},{"from":8082,"to":34457}],"extendApi":{"collab":{"file":"c9.ide.collab/server/collab-server.js","user":{"userId":"504624606337","name":"root"},"project":{"workspaceId":"7b28292a3e8748fe84d40df97d2c3ee7","name":"learning-the-web-7456","type":"ec2"},"environment":{"id":"7b28292a3e8748fe84d40df97d2c3ee7","name":"learning-the-web-7456","type":"ec2"},"readonly":false,"nodePath":"/home/ec2-user/.c9/node_modules"},"ping":{"file":"c9.vfs.client/ping-service.js"},"store":{"file":"c9.vfs.client/store-service.js"}},"defaultEnv":{"HGUSER":"root","EDITOR":"","PORT":"8080","C9_PORT":"8080","IP":"127.0.0.1","C9_HOSTNAME":"18.234.104.123","C9_USER":"root","C9_PROJECT":"learning-the-web-7456","C9_PID":"7b28292a3e8748fe84d40df97d2c3ee7"}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+ec2-user 15183  0.0  0.1 112804  1824 pts/5    Ss+  05:24   0:00 /home/ec2-user/.c9/bin/tmux -u2 -L cloud92.2 attach -t build -d
+ec2-user 15492  0.0  2.9 396940 29844 ?        Sl   05:34   0:00 python -c import argparse?import json?import sys?import os?import logging?from os import path?import urlparse?from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer??# Hackfix codeintel import?sys.path.extend([p + "/codeintel" for p in sys.path])??# Hackfix inflector compatibility?import inflector?class MyInflector: Inflector = inflector.Inflector?class MyInflector2: Inflector = MyInflector?sys.modules["inflector.Inflector"] = MyInflector2?sys.modules["inflector"] = MyInflector2?import inflector.Inflector??from codeintel2.common import EvalController?from codeintel2.manager import Manager?from codeintel2.environment import DefaultEnvironment??def main(args):? if args.mode != "daemon":?  print(process(sys.stdin.read(), args.__dict__))?  manager.finalize()?  return? try:?  server = HTTPServer(("localhost", int(args.port)), Daemon)? except:?  sys.stderr.write("Daemon unable to listen at :%s\n" % args.port)?  sys.exit(98)? sys.stderr.write("!!Daemon " + "listening at :%s\n" % args.port) # concat strings to avoid matching this string in the client? server.serve_forever()??def process(source, args):? mode = args["mode"]? buffer, line, offset = process_input(source, args)? scan_environment(buffer)? ? if mode == "completions":?  return json.dumps(get_completions(buffer, line, offset))? if mode == "definitions":?  return json.dumps(get_definitions(buffer, line, offset))? if mode == "calltips":?  return json.dumps(get_calltips(buffer, line, offset))? if mode == "catalogs":?  return json.dumps(get_catalogs(buffer, line, offset))??def get_completions(buffer, line, offset):? trigger = buffer.preceding_trg_from_pos(offset, offset)? if trigger is None:?  return []? results = buffer.cplns_from_trg(trigger, ctlr = LoggingEvalController(), timeout = 120)? if results is None:?  return []? return [?  remove_nulls({?   "name": get_proposal_name(kind, name, buffer.lang, trigger),?   "replaceText": get_proposal_replace_text(kind, name, buffer.lang, trigger, line),?   "icon": {?    "function": "method",?    "module": "package",?    "class": "package",?    "element": "event",?    "property": "property",?    "value": "method",?   }.get(kind, "property"),?  }) for kind, name in results? ]??def get_definitions(buffer, line, offset):? trigger = buffer.defn_trg_from_pos(offset)? if trigger is None:?  return []? results = buffer.defns_from_trg(trigger, ctlr = LoggingEvalController(), timeout = 10)? if results is None:?  return []? return {?  "path": "/" + results[0].path,?  "row": results[0].line - 1,? }??def get_calltips(buffer, line, offset):? trigger = buffer.preceding_trg_from_pos(offset, offset)? if trigger is None:?  return []? result = buffer.calltips_from_trg(trigger, ctlr = LoggingEvalController(), timeout = 10)? if result is None:?  return ""? return result??def get_catalogs(buffer, line, offset):? return [c for c in manager.db.get_catalogs_zone().avail_catalogs()]??def get_proposal_name(kind, name, lang, trigger):? if lang == "PHP" and kind == "variable" and trigger.name != "php-complete-object-members":?  return "$" + name? if kind == "function" or kind == "method":?  return name + "()"? return name??def get_proposal_replace_text(kind, name, lang, trigger, line):? if lang == "PHP" and kind == "variable" and trigger.name != "php-complete-object-members":?  return "$" + name? if "import " in line:?  return name? if kind == "function" or kind == "method":?  return name + "(^^)"??def remove_nulls(d):? for key, value in d.items():?  if value is None:?   del d[key]?  elif isinstance(value, dict):?   remove_nulls(value)? return d??def process_input(source, args):? row = int(args.get("row"))? column = int(args.get("column"))? path = args.get("path")? basedir = args.get("basedir")? language = args.get("language")? dirs = args.get("dirs")? catalogs = args.get("catalogs").split(",") if args.get("catalogs") else []? ? env = manager.env = DefaultEnvironment()? env.set_pref("codeintel_selected_catalogs", catalogs)? env.set_pref("extra_module_dirs", dirs)? env.set_pref("phpExtraPaths", dirs)? env.set_pref("codeintel_scan_extra_dir", dirs)? env.set_pref("codeintel_scan_files_in_project", True)? ? env.get_proj_base_dir = lambda: basedir? buffer = manager.buf_from_content(source + "\n", language, path = path, env = env)? lines = source.split('\n')? line = lines[row]? offset = sum([len(l) + 1 for l in lines[:row]]) + column? return buffer, line, offset??def scan_environment(buffer):? if not manager.is_citadel_lang(buffer.lang):?  return? if not buffer.lang in scanned_langs:?  sys.stderr.write("!!Updating " + buffer.lang + " indexes\n")?  scanned_langs.append(buffer.lang)?  buffer.scan()?  sys.stderr.write("!!Done updating indexes\n")?  manager.db.save()? else:?  buffer.scan()??class LoggingEvalController(EvalController):? def debug(self, msg, *args): logger.debug(msg, *args)? def info(self, msg, *args): logger.info(msg, *args)? def warn(self, msg, *args): logger.warn(msg, *args)? def error(self, msg, *args): logger.error(msg, *args)??class Daemon(BaseHTTPRequestHandler):? def do_POST(self):?  query = urlparse.urlparse(self.path).query?  args = urlparse.parse_qsl(query)??  length = int(self.headers.getheader("content-length", 0))?  source = self.rfile.read(length)??  self.send_response(200)?  self.end_headers()?  self.wfile.write(process(source, dict(args)))? def log_message(self, format, *args):?  return # log silently??logStream = logging.StreamHandler(sys.stderr)?logStream.setFormatter(logging.Formatter("%(name)s: %(levelname)s: %(message)s"))?logging.getLogger("codeintel").addHandler(logStream)?logger = logging.getLogger("codeintel_server")?logger.addHandler(logStream)?logger.setLevel(logging.WARNING)??manager = Manager(? # db_base_dir = path.join(CI_DIR, 'db'),? # extra_module_dirs = [path.join(CI_DIR, 'codeintel2'),],? # db_import_everything_langs = None,? # db_catalog_dirs = []?)?manager.upgrade()?manager.initialize()?scanned_langs = []??if __name__ == "__main__":? parser = argparse.ArgumentParser(description="Run codeintel commands as a daemon or via stdin")? parser.add_argument("mode", help="Mode of operation", choices=["daemon", "completions", "definitions", "calltips", "catalogs"])? parser.add_argument("--row", type=int, help="The row to read from")? parser.add_argument("--column", type=int, help="The column to read from")? parser.add_argument("--path", help="The path of the file")? parser.add_argument("--basedir", help="The basedir of the file")? parser.add_argument("--language", help="The language of the file")? parser.add_argument("--port", type=int, help="The port for the daemon to listen on")? parser.add_argument("--nodoc", help="Don't include docstrings in output")? parser.add_argument("--catalogs", help="Catalogs to include (comma-separated)")? parser.add_argument("--dirs", help="Directories to include (comma-separated)")? args = parser.parse_args()? main(args) daemon --port 10881
+ec2-user 15531  0.0  0.1 112804  1944 pts/7    Ss+  05:35   0:00 /home/ec2-user/.c9/bin/tmux -u2 -L cloud92.2 attach -t cloud9_terminal_941 -d
+ec2-user 15642  0.0  0.2   9524  2348 pts/6    Ss   Oct03   0:00 bash -c export ISOUTPUTPANE=0;bash -l
+ec2-user 15643  0.0  0.7 119696  7676 pts/6    S+   Oct03   0:00 bash -l
+ec2-user 16982  0.0  0.1 112804  1868 pts/1    Ss+  05:57   0:00 /home/ec2-user/.c9/bin/tmux -u2 -L cloud92.2 new -s cloud9_terminal_89 export ISOUTPUTPANE=0;bash -l ; set -q -g status off ; set -q destroy-unattached off ; set -q mouse-select-pane on ; set -q set-titles on ; set -q quiet on ; set -q -g prefix C-b ; set -q -g default-terminal xterm-256color ; setw -q -g xterm-keys on
+ec2-user 16984  0.0  0.2   9524  2440 pts/10   Ss   05:57   0:00 bash -c export ISOUTPUTPANE=0;bash -l
+ec2-user 16985  0.0  0.7 119696  7600 pts/10   S    05:57   0:00 bash -l
+ec2-user 17508  0.0  0.2 127512  2740 pts/10   S+   05:59   0:00 screen -S lab5Mongo
+ec2-user 17509  0.0  0.2 127784  2784 ?        Ss   05:59   0:00 SCREEN -S lab5Mongo
+ec2-user 17510  0.0  0.3 115780  3684 pts/11   Ss   05:59   0:00 /bin/bash
+root     17654  0.0  0.0      0     0 ?        I    06:00   0:00 [kworker/u30:0]
+ec2-user 17878  0.0  0.2 117268  2396 pts/11   R+   06:04   0:00 ps aux
+ec2-user 26658  0.0  0.2   9524  2444 pts/2    Ss   Sep10   0:00 bash -c export ISOUTPUTPANE=0;bash -l
+ec2-user 26659  0.0  0.7 119696  7608 pts/2    S+   Sep10   0:00 bash -l
+ec2-user 28290  0.0  0.2   9524  2328 pts/8    Ss   Oct02   0:00 bash -c export ISOUTPUTPANE=0;bash -l
+ec2-user 28291  0.0  0.7 119696  7556 pts/8    S+   Oct02   0:00 bash -l
+root     29433  0.0  0.0      0     0 ?        I    Nov11   0:00 [kworker/u30:1]
+apache   29644  0.0  1.4 459776 14880 ?        Sl   Nov11   0:12 /usr/sbin/httpd
+apache   29645  0.0  1.4 459776 14880 ?        Sl   Nov11   0:12 /usr/sbin/httpd
+apache   29646  0.0  1.4 459776 14880 ?        Sl   Nov11   0:12 /usr/sbin/httpd
+apache   29647  0.0  1.4 656448 15016 ?        Sl   Nov11   0:15 /usr/sbin/httpd
+apache   29653  0.0  1.4 459776 14880 ?        Sl   Nov11   0:12 /usr/sbin/httpd
+apache   29953  0.0  1.4 459776 14880 ?        Sl   Nov11   0:11 /usr/sbin/httpd
+ec2-user 31215  0.0  0.2   9524  2436 pts/4    Ss   Oct17   0:00 bash -c export ISOUTPUTPANE=0;bash -l
+ec2-user 31216  0.0  0.7 119764  7552 pts/4    S    Oct17   0:00 bash -l
+mongod   32615  0.1  5.3 1115216 53884 ?       Sl   Oct29  35:36 /usr/bin/mongod -f /etc/mongod.conf

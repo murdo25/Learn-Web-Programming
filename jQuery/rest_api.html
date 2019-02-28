@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>City Finder</title>
+
+
+</head>
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+<script>
+    let source = "http://bioresearch.byu.edu/cs260/jquery/getcity.cgi?q="
+
+    $(document).ready(function() {
+        $("#cityField").keyup(function() {
+            let search_value = document.getElementById("cityField").value;
+            $.getJSON(source + search_value, function(data) {
+
+                    var search
+                    search = "<ul>"
+                    $.each(data, function(i, item) {
+                        if (data[i].city.toUpperCase().startsWith(search_value.toUpperCase()))
+                            search += "<li> " + data[i].city
+                    });
+
+                    $("#txtHint").html(search);
+                })
+                .done(function() { console.log('getJSON request succeeded!'); })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.log('getJSON request failed! ' + textStatus);
+                    console.log("incoming " + jqXHR.responseText);
+                })
+                .always(function() {
+                    console.log('getJSON request ended!');
+                });
+        });
+    });
+</script>
+
+<body>
+    <form>
+        Enter A Big City: <input type="text" id="cityField" value=""><br> Suggestion: <span id="txtHint">Empty</span>
+
+    </form>
+    <p>City</p>
+    <textarea id="displayCity">No City</textarea>
+    <p>Current Weather</p>
+    <div id="weather">No weather</div>
+
+
+
+</body>
+
+</html>

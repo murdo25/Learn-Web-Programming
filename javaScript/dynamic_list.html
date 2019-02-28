@@ -1,0 +1,62 @@
+<html>
+<!-- jquery -->
+<!--<head src="http://code.jquery.com/jquery-3.2.1.min.js">-->
+
+<style type="text/css">
+    body {
+        background-color: #70a1ef
+    }
+</style>
+
+<script>
+    var cities = ["AF", "Provo", "Lindon", "PG", "Lakeview", "Lema", "Lima", "Liken"]
+
+    function listValue(str) {
+        return "<li> " + str + " </li>"
+    }
+
+    function getCity() {
+        let search_value = document.getElementById("search_box").value;
+        console.log(search_value)
+        let suggestions = document.getElementById("suggestions");
+        let valid_cities = ""
+        for (let i in cities) {
+            if (cities[i].toUpperCase().startsWith(search_value.toUpperCase()))
+                valid_cities += listValue(cities[i])
+        }
+        //search_value = listValue(search_value)
+        suggestions.innerHTML = valid_cities
+    }
+</script>
+<!--
+    // <script> 
+    //     $(document).ready(function() {
+    //         $("#cityField").keyup(function() {
+    //             alert("Handler for .keyup() called.");
+    //         });
+    //     });
+    </script>
+-->
+
+</head>
+
+<body>
+    <H1> Cities: </H1>
+    Enter Name: <input type="text" id="search_box" onkeyup="getCity()">
+    <br>
+    <h2>Suggested Cities:</h2>
+    <div id="suggestions"></div>
+    <br>
+    <!--<form>jquery-->
+    <!--    Enter A Utah City: <input type="text" id="cityField" value="">-->
+    <!--    <br> Suggestion: <span id="txtHint">Empty</span>-->
+    <!--    <input id="weatherButton" type="submit" value="Submit">-->
+    <!--</form>-->
+
+
+</body>
+
+
+
+
+</html>

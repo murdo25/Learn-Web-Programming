@@ -1,0 +1,9 @@
+sudo service mongod start
+sudo service mongod stop
+
+logs go in /var/log
+
+run mongo and it will pull up the mongo console
+run 
+> show dbs 
+to view all databases

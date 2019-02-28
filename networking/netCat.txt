@@ -1,0 +1,9 @@
+first off... netcat does everything
+
+
+https://www.cyberciti.biz/faq/how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/
+
+// the -l means listen, so netcat is listning on port 5000
+nc -l 5000
+// now use netcat connect to IPADDRESS on PORTNUMBER
+nc localhost 5000

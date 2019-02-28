@@ -1,0 +1,39 @@
+[ { _id: 5c108ba80420b2295047165f,
+    ngc: 'NGC 7293',
+    name: 'Helix',
+    type: 'planetary',
+    location: 'Aquila' },
+  { _id: 5c108ba80420b22950471660,
+    ngc: 'NGC 6543',
+    name: 'Cat\'s Eye',
+    type: 'planetary',
+    location: 'Draco' },
+  { _id: 5c108ba80420b22950471661,
+    ngc: 'NGC 1952',
+    name: 'Crab',
+    type: 'supernova',
+    location: 'Taurus' } ]
+Found One: 
+{ _id: 5c108ba80420b2295047165f,
+  ngc: 'NGC 7293',
+  name: 'Helix',
+  type: 'planetary',
+  location: 'Aquila' }
+Singular Document: 
+{ _id: 5c108ba80420b2295047165f,
+  ngc: 'NGC 7293',
+  name: 'Helix',
+  type: 'planetary',
+  location: 'Aquila' }
+Singular Document: 
+{ _id: 5c108ba80420b22950471660,
+  ngc: 'NGC 6543',
+  name: 'Cat\'s Eye',
+  type: 'planetary',
+  location: 'Draco' }
+Singular Document: 
+{ _id: 5c108ba80420b22950471661,
+  ngc: 'NGC 1952',
+  name: 'Crab',
+  type: 'supernova',
+  location: 'Taurus' }

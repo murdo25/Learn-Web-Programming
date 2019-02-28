@@ -1,0 +1,14 @@
+You can totally make api calls like
+graph.facebook.com/youtube?fields=likes
+
+
+
+AJAX:
+
+
+
+jQuery:
+class button.continue
+id    #buttonName
+
+

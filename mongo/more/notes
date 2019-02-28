@@ -1,0 +1,58 @@
+
+node bin/www >& output &
+
+ps aux | grep node
+
+
+to test your post stuff for databases:
+curl -X "POST" --data '{"Name":"Mickey","Comment":"Hello"}' -H "Content-Type: application/json" http://localhost:4200/comment
+
+
+mongo
+MongoDB shell version v4.0.3
+connecting to: mongodb://127.0.0.1:27017
+Implicit session: session { "id" : UUID("6b484e0e-cf84-4b38-8248-0a9e62d92cf1") }
+MongoDB server version: 4.0.3
+Server has startup warnings: 
+2018-10-29T20:40:02.012+0000 I STORAGE  [initandlisten] 
+2018-10-29T20:40:02.012+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-10-29T20:40:02.012+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-10-29T20:40:02.742+0000 I CONTROL  [initandlisten] 
+2018-10-29T20:40:02.742+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-10-29T20:40:02.742+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-10-29T20:40:02.742+0000 I CONTROL  [initandlisten] 
+2018-10-29T20:40:02.743+0000 W CONTROL  [initandlisten] 
+2018-10-29T20:40:02.743+0000 W CONTROL  [initandlisten] 
+2018-10-29T20:40:02.743+0000 I CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> show databases
+admin      0.000GB
+commentDB  0.000GB
+config     0.000GB
+local      0.000GB
+poki       0.000GB
+> 
+> 
+> use commentDB
+switched to db commentDB
+> show collections
+comments
+> db.getCollection("comments").find()
+{ "_id" : ObjectId("5be35c65323d53270556db97"), "Name" : "Mickey", "Comment" : "Hello", "__v" : 0 }
+> 
+> 
+> 
+> 
+> 
+> 

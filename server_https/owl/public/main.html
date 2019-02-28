@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+    <form>
+        Enter a word to search: <input type "text" id="user_word" value="">
+        <button id="submit_word">Submit</button>
+        <br> Definition:
+
+        <span id="results"></span>
+    </form>
+    <script>
+        $("#submit_word").click(function(event) {
+            event.preventDefault()
+
+            url = "dictionary?q="
+            url += $("#user_word").val()
+
+            console.log(url)
+            $.getJSON(url, function(data) {
+                console.log(data)
+                var everything = "<ul>"
+                $.each(data, function(i, item) {
+                    everything += "<li>" + data[i].defenition + "</li>"
+                })
+                everything += "</ul>"
+                console.log(everything)
+                $("#results").html(everything)
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

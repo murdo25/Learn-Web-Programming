@@ -1,0 +1,48 @@
+<html>
+<style type="text/css">
+    .jumbotron {
+        /*background-color: #f4511e;*/
+        background-color: rgb(1, 2, 3);
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+
+<head>
+    <script type="text/javascript">
+        function getRandomInt(max) {
+            var bound = 0;
+            return Math.floor((Math.random() + bound) * Math.floor(max));
+        }
+
+        function rgbValue() {
+            var fullRGB = "rgb(" + getRandomInt(255) + ", " + getRandomInt(255) +
+                ", " + getRandomInt(255) + ")";
+            return fullRGB;
+        }
+
+
+
+        function ChangeColor(event) {
+            let array1 = [1, 2, 3, 4, 5]
+
+            console.log(array1["3"])
+            array1.forEach(function(entry) {
+                console.log(entry);
+            });
+
+
+            document.body.bgColor = rgbValue()
+            document.getElementById('test1').style.backgroundColor = rgbValue()
+            console.log("changed colors")
+        }
+    </script>
+</head>
+
+<body onclick="ChangeColor(event)">
+    Click on this document!
+    <h1 id="test1" class="jumbotron"> Hi :) </h1>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>MTG Example</title>
+
+    <style>
+    </style>
+
+
+</head>
+
+
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+
+<script>
+    //http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439390&type=card
+    //multiverseid
+
+    function getImage(multiverseid) {
+
+    }
+
+
+    $(document).ready(function() {
+        console.log("test123")
+        let everything = "<ul>"
+
+        $("#submitButton").click(function(e) {
+            // e.preventDefault();
+            // var value = $("#inputField").val();
+            // e.preventDefault();
+            // console.log(value);
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * Math.floor(max));
+            }
+
+            var value = $("#inputField").val();
+            e.preventDefault();
+            console.log(value);
+
+            $("#displayCity").text(value);
+            let source = "https://api.magicthegathering.io/v1/cards/cardNumber"
+            source = source.replace("cardNumber", getRandomInt(4800))
+
+
+
+
+            $.ajax({
+                url: source,
+                dataType: "json",
+                success: function(parsed_json) {
+                    console.log("step1:", parsed_json)
+
+
+                    // var location = parsed_json['city']['name']
+                    var testCard = parsed_json['card']
+                    //console.log(testCard)
+                    console.log(testCard['imageUrl'])
+                    // everything += testCard['name']
+                    everything += "<h3>" + testCard['name'] + "</h3> <br> <img src=\"" + testCard['imageUrl'] + "\">"
+
+                    //everything += "</ul>";
+                    $("#cardResults").html(everything);
+                }
+            })
+        });
+    });
+</script>
+
+<body>
+    <form>
+        <!--Enter A Card Name:-->
+        Find a Card:<br>
+        <!--<input id="inputField" type="text" value="test">-->
+        <input id="submitButton" type="submit" value="Random Card">
+    </form>
+    <!--<p>City</p>-->
+    <!--<textarea id="displayCity">No City</textarea>-->
+    <!--<p>Current Weather:</p>-->
+    <!--<div id="weather">No weather</div>-->
+    <!--<p>Stack Overflow Search:</p>-->
+    <!--<form>-->
+    <!--    Enter a query: <input type="text" id="searchField" value=""><br>-->
+    <!--    <input id="searchButton" type="submit" value="Submit">-->
+    <!--</form>-->
+    <div id="cardResults"></div>
+    <!--<img src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439390&type=card">-->
+
+</body>
+
+
+</html>

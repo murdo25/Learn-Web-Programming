@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Furby Shop</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <script src="javascripts/app.js"></script>
+</head>
+
+<body ng-app="shop" ng-controller="MainCtrl" class="store_wallpaper">
+    <div style="margin-left: 5em;">
+        <h1> Welcome To The Furby Shop! </h1>
+
+
+        <h1>Current Items</h1>
+        <div ng-repeat="item in items | orderBy: 'Name'">
+
+            <input type="checkbox" ng-model="item.selected">
+
+
+            <h3 class="text_bold visable">{{item.Name}} - ${{item.Price}}</h3>
+            <img class='avatar' ng-src="{{item.Picture}}" />
+
+
+        </div>
+        <button ng-click="submitCart()">
+Submit Cart
+</button>
+
+        <h1>Purchased Items: </h1>
+        <div ng-repeat="item in cart | orderBy: 'Name'">
+            <h3 class="text_bold">{{item.Name}} - ${{item.Price}}</h3>
+        </div>
+    </div>
+</body>
+
+</html>

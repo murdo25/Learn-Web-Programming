@@ -1,0 +1,6 @@
+change server port:
+export PORT=4200
+
+express owl //THIS WILL MAKE THE WHOLE STRUCTURE THAT YOU NEED :)
+
+
