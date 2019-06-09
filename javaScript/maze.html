@@ -1,0 +1,28 @@
+<html>
+
+<style>
+    body {
+        background-color: #219096;
+    }
+</style>
+
+<head>
+    <script type="text/javascript">
+        function show_coords(event) {
+            x = event.clientX;
+            y = event.clientY;
+            /*alert("X coords: " + x + ", Y coords: " + y);*/
+            document.getElementById("demo").innerHTML = "Current cords= (" + x + "," + y + ")";
+            event.preventDefault();
+
+        }
+    </script>
+</head>
+
+<body onmousemove="show_coords(event)">
+    <p>Move your curser and don't hit the boxes!</p>
+    <p id="demo"></p>
+
+</body>
+
+</html>
